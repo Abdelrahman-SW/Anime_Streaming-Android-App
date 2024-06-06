@@ -1,0 +1,140 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="ParentTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="AppBackgroundColor">?android:colorBackground</item>
+        <item name="toolbarColor">@color/white</item>
+        <item name="colorOnToolbar">@color/black</item>
+    </style>
+
+    <style name="AppBlackTheme" parent="ParentTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="AppBackgroundColor">@color/black_theme_color</item>
+        <item name="toolbarColor">#06070B</item>
+        <item name="colorOnToolbar">@color/white</item>
+    </style>
+
+
+
+
+    <style name="ParentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">?attr/colorOnToolbar</item>
+        <item name="android:textColorSecondary">?attr/colorOnToolbar</item>
+        <item name="actionMenuTextColor">?attr/colorOnToolbar</item>
+        <item name="android:textColorHint">#8A8A8A</item>
+        <item name="backgroundColor">?attr/toolbarColor</item>
+    </style>
+
+    <style name="ToolBarStyle_2" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="actionMenuTextColor">@android:color/black</item>
+
+    </style>
+
+
+    <style name="ToolbarTheme.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textDirection">rtl</item>
+        <item name="android:ellipsize">end</item>
+        <item name="maxWidth">100dp</item>
+    </style>
+
+
+    <style name="toolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolbarColorPrimary</item>
+        <item name="colorPrimaryDark">@color/toolbarColorPrimaryDark</item>
+        <item name="colorAccent">@color/toolbarColorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+    </style>
+
+    <style name="navdrawerTheme">
+        <item name="android:textSize">18sp</item><!-- text size in menu-->
+
+        <!-- item size in menu-->
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+        <item name="listPreferredItemHeightSmall">40dp</item>
+
+        <!-- item padding left in menu-->
+        <item name="android:listPreferredItemPaddingLeft">8dp</item>
+        <item name="listPreferredItemPaddingLeft">8dp</item>
+
+        <!-- item padding right in menu-->
+        <item name="android:listPreferredItemPaddingRight">8dp</item>
+        <item name="listPreferredItemPaddingRight">8dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="nav_item_appearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Neutral</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Neutral</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Alert.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="NavigationViewTheme">
+
+    </style>
+
+
+    <declare-styleable name="MyCustomAttributes">
+        <attr name="AppBackgroundColor" format="color"/>
+        <attr name="IconsColor" format="color"/>
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="toolbarColor" format="color"/>
+        <attr name="colorOnToolbar" format="color"/>
+        <attr name="toolbarIconsColor" format="color"/>
+        <attr name="textHighlight" format="color"/>
+        <attr name="textHighlightEpisodesTime" format="color"/>
+        <attr name="headerBackgroundColor" format="color"/>
+        <attr name="navHeaderBackgroundColor" format="color"/>
+        <attr name="leaderboardNumbers" format="color"/>
+        <attr name="defaultBtnBackgroundColor" format="color"/>
+        <attr name="defaultBtnTxtBackgroundColor" format="color"/>
+        <attr name="dialogBackgroundColor" format="color"/>
+        <attr name="dialogTextColor" format="color"/>
+        <attr name="myToolbarStyle" format="integer"/>
+    </declare-styleable>
+
+</resources>

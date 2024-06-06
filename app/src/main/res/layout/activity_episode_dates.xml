@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <FrameLayout
+        android:background="?attr/AppBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/included_toolbar"
+                layout="@layout/layout_toolbar" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/date_layout_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/episode_date_background"
+                                android:padding="@dimen/episode_title_padding"
+                                android:text="السبت"
+                                android:textColor="?attr/episode_date_title_color"
+                                android:textSize="@dimen/episode_date_title_size" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/date_recycle_margin"
+                                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                app:spanCount="3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/date_layout_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/episode_date_background"
+                                android:padding="@dimen/episode_title_padding"
+                                android:text="الأحد"
+                                android:textColor="?attr/episode_date_title_color"
+                                android:textSize="@dimen/episode_date_title_size" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/date_recycle_margin"
+                                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                app:spanCount="3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/date_layout_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/episode_date_background"
+                                android:padding="@dimen/episode_title_padding"
+                                android:text="الأثنين"
+                                android:textColor="?attr/episode_date_title_color"
+                                android:textSize="@dimen/episode_date_title_size" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/date_recycle_margin"
+                                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                app:spanCount="3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/date_layout_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/episode_date_background"
+                                android:padding="@dimen/episode_title_padding"
+                                android:text="الثلاثاء"
+                                android:textColor="?attr/episode_date_title_color"
+                                android:textSize="@dimen/episode_date_title_size" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/date_recycle_margin"
+                                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                app:spanCount="3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/date_layout_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/episode_date_background"
+                                android:padding="@dimen/episode_title_padding"
+                                android:text="الإربعاء"
+                                android:textColor="?attr/episode_date_title_color"
+                                android:textSize="@dimen/episode_date_title_size" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/date_recycle_margin"
+                                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                app:spanCount="3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/date_layout_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/episode_date_background"
+                                android:padding="@dimen/episode_title_padding"
+                                android:text="الخميس"
+                                android:textColor="?attr/episode_date_title_color"
+                                android:textSize="@dimen/episode_date_title_size" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/date_recycle_margin"
+                                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                app:spanCount="3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/date_layout_padding">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/episode_date_background"
+                                android:padding="@dimen/episode_title_padding"
+                                android:text="الجمعة"
+                                android:textColor="?attr/episode_date_title_color"
+                                android:textSize="@dimen/episode_date_title_size" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/date_recycle_margin"
+                                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                app:spanCount="3" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/progressBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mytransparentBackgroud"
+            android:visibility="gone">
+
+            <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progress"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent" />
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</layout>

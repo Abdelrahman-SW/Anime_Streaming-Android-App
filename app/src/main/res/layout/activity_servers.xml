@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:background="?attr/AppBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl"
+            android:fitsSystemWindows="true"
+            tools:context=".activities.ServersActivity">
+
+            <androidx.appcompat.widget.Toolbar
+                android:paddingEnd="6dp"
+                android:fitsSystemWindows="true"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toolbar_background"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/ToolBarStyle"
+                android:elevation="16dp"
+                tools:showIn="@layout/activity_main" >
+                <TextView
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textDirection="rtl"
+                    android:layout_marginEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="16dp"
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hellllo my name is"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="?attr/colorOnToolbar"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <LinearLayout
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <LinearLayout
+                    android:id="@+id/llServer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="6dp"
+                        app:contentPadding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="?attr/info_card_back"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+
+                        <TextView
+                            android:layout_gravity="center_vertical|start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="سيرفر  1"
+                            android:textColor="?attr/infoTextColor_1" />
+
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/play1"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="100dp"
+                            android:src="@drawable/play" />
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/download1"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="50dp"
+                            android:src="@drawable/download_button" />
+
+                        <ImageView
+                            android:id="@+id/active1"
+                            android:layout_width="@dimen/power_on_off_dim"
+                            android:layout_height="@dimen/power_on_off_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:src="@drawable/active" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llServer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="6dp"
+                        app:contentPadding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="?attr/info_card_back"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+
+                        <TextView
+                            android:layout_gravity="center_vertical|start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="سيرفر  2"
+                            android:textColor="?attr/infoTextColor_1" />
+
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/play2"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="100dp"
+                            android:src="@drawable/play" />
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/download2"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="50dp"
+                            android:src="@drawable/download_button" />
+
+                        <ImageView
+                            android:id="@+id/active2"
+                            android:layout_width="@dimen/power_on_off_dim"
+                            android:layout_height="@dimen/power_on_off_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:src="@drawable/active" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llServer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="6dp"
+                        app:contentPadding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="?attr/info_card_back"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+
+                        <TextView
+                            android:layout_gravity="center_vertical|start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="سيرفر  3"
+                            android:textColor="?attr/infoTextColor_1" />
+
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/play3"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="100dp"
+                            android:src="@drawable/play" />
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/download3"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="50dp"
+                            android:src="@drawable/download_button" />
+
+                        <ImageView
+                            android:id="@+id/active3"
+                            android:layout_width="@dimen/power_on_off_dim"
+                            android:layout_height="@dimen/power_on_off_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:src="@drawable/active" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llServer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="6dp"
+                        app:contentPadding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="?attr/info_card_back"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+
+                        <TextView
+                            android:layout_gravity="center_vertical|start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="سيرفر  4"
+                            android:textColor="?attr/infoTextColor_1" />
+
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/play4"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="100dp"
+                            android:src="@drawable/play" />
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/download4"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="50dp"
+                            android:src="@drawable/download_button" />
+
+                        <ImageView
+                            android:id="@+id/active4"
+                            android:layout_width="@dimen/power_on_off_dim"
+                            android:layout_height="@dimen/power_on_off_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:src="@drawable/active" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llServer5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="6dp"
+                        app:contentPadding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="?attr/info_card_back"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+
+                        <TextView
+                            android:layout_gravity="center_vertical|start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="سيرفر  5"
+                            android:textColor="?attr/infoTextColor_1" />
+
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/play5"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="100dp"
+                            android:src="@drawable/play" />
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/download5"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="50dp"
+                            android:src="@drawable/download_button" />
+
+                        <ImageView
+                            android:id="@+id/active5"
+                            android:layout_width="@dimen/power_on_off_dim"
+                            android:layout_height="@dimen/power_on_off_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:src="@drawable/active" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llServer6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="6dp"
+                        app:contentPadding="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layoutDirection="rtl"
+                        app:cardBackgroundColor="?attr/info_card_back"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+
+                        <TextView
+                            android:layout_gravity="center_vertical|start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="سيرفر  6"
+                            android:textColor="?attr/infoTextColor_1" />
+
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/play6"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="100dp"
+                            android:src="@drawable/play" />
+
+                        <ImageView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:id="@+id/download6"
+                            android:layout_width="@dimen/server_btn_dim"
+                            android:layout_height="@dimen/server_btn_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="50dp"
+                            android:src="@drawable/download_button" />
+
+                        <ImageView
+                            android:id="@+id/active6"
+                            android:layout_width="@dimen/power_on_off_dim"
+                            android:layout_height="@dimen/power_on_off_dim"
+                            android:layout_gravity="end|center_vertical"
+                            android:src="@drawable/active" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="24dp"
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                >
+
+                <TextView
+                    android:textColor="?attr/title_color"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginBottom="2dp"
+                    android:drawablePadding="12dp"
+                    android:drawableStart="@drawable/ic_baseline_arrow_circle_right_24"
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:background="?attr/info_card_back"
+                    android:elevation="2dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="الحلقه السابقة" />
+
+
+
+                <TextView
+                    android:textColor="?attr/title_color"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_marginBottom="2dp"
+                    android:drawablePadding="12dp"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_circle_left_24"
+                    android:layout_marginStart="36dp"
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:elevation="2dp"
+                    android:background="?attr/info_card_back"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="الحلقة التالية" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/progressBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mytransparentBackgroud"
+            android:elevation="7dp"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progress"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent" />
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+</layout>

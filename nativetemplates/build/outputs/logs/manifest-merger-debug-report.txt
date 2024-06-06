@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml:1:1-8:12
+INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml:1:1-8:12
+INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml:1:1-8:12
+	package
+		ADDED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml:2:3-51
+		INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml:3:3-5:17
+	android:supportsRtl
+		ADDED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml:3:16-42
+uses-sdk
+INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Ahmed/Work/Projects/Anime_Cartoons/AnimeCartoons2021_V2/AnimeCartoonsNew_XGetter_Fixed/nativetemplates/src/main/AndroidManifest.xml

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/AppBackgroundColor"
+        android:layoutDirection="rtl"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/included_toolbar"
+                layout="@layout/layout_toolbar" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp">
+
+
+                <ImageView
+                    android:id="@+id/background"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:alpha="0.1"
+                    android:contentDescription="background"
+                    tools:ignore="HardcodedText" />
+
+                <RelativeLayout
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/img_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardBackgroundColor="#fff"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="120dp"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <FrameLayout
+                        android:id="@+id/rate_container"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/action_container"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp">
+
+                        <TextView
+                            android:id="@+id/rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:textColor="?attr/infoTextColor_1"
+                            android:textSize="15sp"
+                            app:drawableTopCompat="@drawable/ic_star_2"
+                            tools:text="8.1/10" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/info_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_toStartOf="@id/img_container"
+                        android:gravity="end"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:layoutDirection="ltr"
+                            android:textColor="?attr/infoTextColor_1"
+                            android:textDirection="ltr"
+                            android:textSize="17sp"
+                            android:maxLines="2"
+                            tools:text="مسلسل توم وجيريdddddddddddddddddddddddddddddddddddddddddddddddddddddddd" />
+
+
+                        <TextView
+                            android:id="@+id/statues"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:textColor="?attr/infoTextColor_2"
+                            tools:text="مكتمل" />
+
+
+                        <TextView
+                            android:id="@+id/year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="?attr/infoTextColor_2"
+                            tools:text="1970" />
+
+
+                        <TextView
+                            android:id="@+id/age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="?attr/infoTextColor_2"
+                            tools:text="+13" />
+
+                        <TextView
+                            android:id="@+id/isTranslateOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="?attr/infoTextColor_2"
+                            tools:text="مدبلج" />
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/watch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/info_container"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/watch_back"
+                        android:gravity="center"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:text="مشاهدة المسلسل"
+                        android:textColor="?attr/defaultBtnTxtColor" />
+
+
+                    <LinearLayout
+                        android:id="@+id/action_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/watch"
+                        android:layout_alignTop="@id/action_container"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_toStartOf="@id/rate_container"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/addFeedback"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:text="إضافة توصية"
+                            android:textColor="?attr/infoTextColor_1"
+                            android:textSize="16sp"
+                            app:drawableTopCompat="@drawable/ic_baseline_feedback_24" />
+
+
+                        <TextView
+                            android:id="@+id/add_To_Watch_later"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:text="قائمتي"
+                            android:textColor="?attr/infoTextColor_1"
+                            android:textSize="17sp"
+                            app:drawableTopCompat="@drawable/ic_baseline_add_24" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/more_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layoutDirection="rtl"
+                    app:cardBackgroundColor="?attr/info_card_back"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="6dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <TextView
+                                android:textDirection="rtl"
+                                android:id="@+id/category"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/title_background"
+                                android:textColor="?attr/infoTextColor_2"
+                                tools:text="أكشن , رعب , إثارة" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="القصة :"
+                                android:textColor="?attr/infoTextColor_1"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:textDirection="rtl"
+                                android:id="@+id/story"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:layout_marginTop="8dp"
+                                android:gravity="start"
+                                android:textColor="?attr/infoTextColor_2" />
+
+                            <ImageView
+                                android:id="@+id/show_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_baseline_more_horiz_24"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mytransparentBackgroud"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progress"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#3B97C7" />
+
+    </FrameLayout>
+</FrameLayout>

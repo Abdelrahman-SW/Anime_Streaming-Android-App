@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/header_background"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+	android:paddingTop="32dp"
+	android:paddingStart="32dp"
+	android:paddingEnd="32dp"
+	android:paddingBottom="16dp"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+
+	<de.hdodenhof.circleimageview.CircleImageView
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/user_profile"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginBottom="16dp"
+		android:src="@drawable/user_profile"
+		app:civ_border_color="#FF000000"
+		app:civ_border_width="1dp" />
+
+
+	<TextView
+		android:textColor="?attr/header_text_color_1"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/Username"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/user_profile"
+		android:maxWidth="300dp"
+		android:gravity="center_horizontal"
+		android:text="لم تقم بتسجيل الدخول"
+		android:textSize="15sp" />
+
+
+	<TextView
+		android:textColor="?attr/header_text_color_2"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/Login"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/Username"
+		android:layout_marginTop="8dp"
+		android:gravity="center"
+		android:text="تسجيل الأن"
+		android:textSize="14sp"
+		/>
+
+
+
+
+
+
+	<!--<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@android:drawable/ic_menu_gallery"
+		android:scaleType="fitXY"
+		android:visibility="gone"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:paddingBottom="15dp">
+
+
+		<com.mikhaellopez.circularimageview.CircularImageView
+			android:id="@+id/userImg"
+			android:layout_height="100dp"
+			android:layout_width="100dp"
+			android:layout_gravity="center_horizontal"
+			/>
+
+
+		<TextView
+			android:id="@+id/userName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:fontFamily="sans-serif-medium"
+			android:gravity="bottom"
+			android:textColor="#FFFFFF"
+			android:textSize="14sp"
+			android:layout_marginTop="20dp" />
+
+
+	</LinearLayout>-->
+
+</LinearLayout>
+
+
+	</LinearLayout>

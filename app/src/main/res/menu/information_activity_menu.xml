@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share"
+        android:title="المشاركة"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/favourite"
+        android:title="المفضلة"
+        android:icon="@drawable/empty_star"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/add_to_watched"
+        android:title="تمت مشاهدته"
+        android:icon="@drawable/ic_baseline_done_all_24"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+
+
+
+
+</menu>

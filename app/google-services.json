@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "985022686551",
+    "project_id": "aforall",
+    "storage_bucket": "aforall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985022686551:android:bef93ab35275a0028cca12",
+        "android_client_info": {
+          "package_name": "com.anyone.smardy.motaj.badtrew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985022686551-oj3oilqks4mi677hbdsma3o1gpc8n6lr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anyone.smardy.motaj.badtrew",
+            "certificate_hash": "21fb14d392192a099336f30b6e86ca3569be45a2"
+          }
+        },
+        {
+          "client_id": "985022686551-d2rebf3f6utaes74cgmv8g37o8cof8li.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxUfM6kgiNnZF2ASdqhRb3Wy5naJklvMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985022686551-d2rebf3f6utaes74cgmv8g37o8cof8li.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

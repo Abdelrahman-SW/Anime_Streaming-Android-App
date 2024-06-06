@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/AppBackgroundColor"
+    android:fitsSystemWindows="true"
+    android:layout_marginBottom="10dp"
+    tools:context=".activities.splashActivity">
+
+
+    <ImageView
+        android:id="@+id/splash_img"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true" />
+
+
+    <TextView
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/splash_img"
+        android:layout_marginTop="42dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="يتم تحميل معلوماتك الان يرجي الإنتظار ... "
+        android:textColor="?attr/infoTextColor_1"
+        android:id="@+id/msg"/>
+
+</RelativeLayout>

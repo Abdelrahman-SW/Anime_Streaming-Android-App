@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:queryBackground="@null"
+        android:id="@+id/menusearch"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:id="@+id/notification"
+        android:title="الإشعارات"
+        android:icon="@drawable/ic_baseline_notifications_none_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/grid_or_list"
+        android:title="قائمة"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        app:showAsAction="always"
+        />
+
+
+
+<!--    <item-->
+<!--        android:id="@+id/share"-->
+<!--        android:icon="@drawable/share"-->
+<!--        android:title="Share"-->
+<!--        android:visible="false"-->
+<!--        app:showAsAction="always" />-->
+
+</menu>

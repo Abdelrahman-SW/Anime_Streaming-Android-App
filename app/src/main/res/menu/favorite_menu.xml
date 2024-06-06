@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/change_order"
+        android:title="ترتيب"
+        android:icon="@drawable/ic_baseline_sort_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/grid_or_list"
+        android:title="قائمة"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_empty_star"
+        android:title="Add To Favourite"
+        android:icon="@drawable/empty_star"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/menu_filled_star"
+        android:title="Remove From Favourite"
+        android:icon="@drawable/filled_star"
+        app:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/share_black"
+        android:iconTint="@color/black"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menusearch"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white"
+        app:actionViewClass="android.widget.SearchView"
+        android:iconTint="@color/black"
+        app:showAsAction="always"
+        />
+
+
+</menu>

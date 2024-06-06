@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="12dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_img_ImageView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/user_profile" />
+
+            <TextView
+                android:id="@+id/usernameTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_toStartOf="@id/user_img_ImageView"
+                android:layout_toEndOf="@id/dateTxtView"
+                android:ellipsize="start"
+                android:gravity="end"
+                android:textAlignment="textEnd"
+                android:textColor="?attr/infoTextColor_1"
+                android:textDirection="rtl"
+                android:textSize="13sp"
+                tools:text="عبدالرحمن خالد" />
+
+
+            <TextView
+                android:textColor="?attr/infoTextColor_1"
+                android:id="@+id/dateTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:alpha="0.5"
+                android:ellipsize="end"
+                android:text="منذ 4 أشهر"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/feedbackTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dateTxtView"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_toStartOf="@id/user_img_ImageView"
+                android:alpha="0.8"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="?attr/infoTextColor_1"
+                android:textDirection="rtl"
+                android:textSize="15sp"
+                tools:text="Helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo" />
+
+
+            <ImageView
+                android:id="@+id/deleteORReportImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/actions_container"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp"
+                android:alpha="0.8"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:id="@+id/actions_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedbackTxtView"
+                android:layout_alignEnd="@id/usernameTxtView"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/deleteORReportImgView"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textColor="?attr/infoTextColor_2"
+                    android:paddingTop="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/replyTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_baseline_article_24"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:textSize="12sp"
+                    tools:text="0" />
+
+
+                <TextView
+                    android:textColor="?attr/infoTextColor_2"
+                    android:id="@+id/dislikesTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_baseline_thumb_down_24"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:textSize="12sp"
+                    tools:text="12" />
+
+
+                <TextView
+                    android:textColor="?attr/infoTextColor_2"
+                    android:id="@+id/likesTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_baseline_thumb_up_24"
+                    android:drawablePadding="8dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:textSize="12sp"
+                    tools:text="30" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+</layout>
+

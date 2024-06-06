@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a05b5</color>
+    <color name="colorPrimaryDark">#1a05b5</color>
+    <color name="colorAccent">#3B97C7</color>
+
+    <color name="toolbarColorPrimary">#22292e</color>
+    <color name="toolbarColorPrimaryDark">#000000</color>
+    <color name="toolbarColorAccent">#3B97C7</color>
+    <color name="purple_500">@color/gmts_blue</color>
+    <color name="transparentBackgroundColor">#b0000000</color>
+    <color name="transparentBackgroundColorVideo">#29000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#F17272</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cardBackground">#FE1D1D2F</color>
+    <color name="green">#7EC544</color>
+    <color name="yellow">@color/purple_500</color>
+    <color name="red">#F6404F</color>
+    <color name="blue">#78DBF3</color>
+    <color name="pink">#F375B5</color>
+    <color name="orange">#000000</color>
+    <color name="blue_pie">#007afe</color>
+    <color name="red_pie">#F6404F</color>
+    <color name="green_pie">#08a045</color>
+    <color name="gray">#c4c4c4</color>
+    <color name="bg">#EEEEEE</color>
+    <color name="mytransparentBackgroud">#940d0d0d</color>
+    <color name="mytransparentBackgroud2">#e1000000</color>
+    <color name="mytransparentBackgroud3">#d6ffffff</color>
+    <color name="mytransparentBackgroud4">#a0ffffff</color>
+
+    <color name="notification_color">#004950</color>
+    <color name="newPrimaryColor" >@color/white</color>
+    <color name="AnimeTextColor" >@color/gray</color>
+    <color name="AnimeTextColor_2" >#989898</color>
+    <color name="AnimeTextColor_1" >#6C6C6C</color>
+    <color name="episode_date_title_color">#000000</color>
+
+
+
+    <color name="black_theme_color">#0e121a</color>
+    <color name="Purple_theme_color">#ECC6FF</color>
+    <color name="red_theme_color">#E76363</color>
+    <color name="Gray_theme_color">#999999</color>
+    <color name="Deep_Purple_color">#e1ccff</color>
+    <color name="blue_theme_color">#5075fb</color>
+    <color name="Green_theme_color">#4ED853</color>
+    <color name="defualt_highlight">#1A78DBF3</color>
+    <color name="default_header_stroke">#D5D5D5</color>
+    <color name="default_episode_date_back_color">#414BCEF0</color>
+    <color name="default_ripple_color">#9A0197BC</color>
+    <color name="default_btn_color">#9A78DBF3</color>
+    <color name="default_info2_color">#6C6C6C</color>
+    <color name="default_action_icons_color">#3B97C7</color>
+    <color name="default_register_msg_color">#000C51</color>
+
+    <color name="theme_Purple">#aa00ff</color>
+    <color name="theme_Deep_Purple">#6200ea</color>
+    <color name="theme_green">#215E23</color>
+    <color name="theme_red">#FF0327</color>
+    <color name="theme_blue">#0539f7</color>
+    <color name="theme_Gray">#595959</color>
+    <color name="dialog_background">#80272727</color>
+
+
+</resources>

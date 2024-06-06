@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:icon="@drawable/new_espoide"
+            android:id="@+id/latest_episodes"
+            android:title="أحدث الحلقات"
+            android:checkable="true"
+            />
+
+    <item
+        android:id="@+id/translation_anime"
+        android:checkable="true"
+        android:icon="@drawable/translation"
+        android:title="الأنمي المترجم" />
+
+    <item
+        android:id="@+id/anime"
+        android:checkable="true"
+        android:icon="@drawable/cartoons"
+        android:title="الكرتون المدبلج" />
+
+
+        <item
+            android:icon="@drawable/adventure"
+            android:id="@+id/films_t"
+            android:checkable="true"
+            android:title="الأفلام المترجمة" />
+
+            <item
+                android:icon="@drawable/spy"
+                android:id="@+id/films_d"
+                android:checkable="true"
+                android:title="الأفلام المدبلجة" />
+
+    <item
+        android:id="@+id/new_cartoon"
+        android:checkable="true"
+        android:icon="@drawable/new_1"
+        android:title="الأنمي المستمر" />
+
+    <item
+        android:id="@+id/anime_time"
+        android:checkable="true"
+        android:icon="@drawable/hourglass"
+        android:title="مواعيد الحلقات" />
+    <item
+                android:icon="@drawable/trending"
+                android:id="@+id/most_viewed"
+                android:checkable="true"
+                android:title="الأكثر مشاهدة" />
+
+        <item
+            android:icon="@drawable/binoculars"
+            android:id="@+id/see_later"
+            android:checkable="true"
+            android:title="قائمتي" />
+
+    <item
+        android:icon="@drawable/seen_done"
+        android:id="@+id/animeSeen"
+        android:checkable="true"
+        android:title="تم مشاهدته" />
+
+
+        <item
+            android:icon="@drawable/filled_star"
+            android:id="@+id/favourite"
+            android:checkable="true"
+            android:title="المفضلة" />
+
+    <item
+        android:icon="@drawable/score"
+        android:id="@+id/leaderboard"
+        android:checkable="true"
+        android:title="أبرز المستخدمين" />
+
+    <item
+        android:icon="@drawable/down_arrow"
+        android:id="@+id/anime_downloads"
+        android:title="التحميلات"
+        android:checkable="true" />
+
+        <item
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:id="@+id/settings"
+            android:checkable="true"
+            android:title="الإعدادات"/>
+
+        <item
+            android:icon="@drawable/ic_log_out"
+            android:id="@+id/log_out"
+            android:title="تسجيل الخروج"/>
+
+<!--    <item android:title="       إجراءات">-->
+<!--        <menu-->
+<!--            >-->
+<!--    <group android:checkableBehavior="none"-->
+<!--        >-->
+
+<!--        <item-->
+<!--            android:icon="@drawable/telegram"-->
+<!--            android:id="@+id/support"-->
+<!--            android:title="قناتي على التيلغرام" />-->
+
+<!--        <item-->
+<!--            android:icon="@drawable/web_link"-->
+<!--            android:id="@+id/rate"-->
+<!--            android:title="الذهاب الى موقعنا" />-->
+
+<!--        <item-->
+<!--            android:icon="@drawable/telephone"-->
+<!--            android:id="@+id/contact_us"-->
+<!--            android:title="تواصل معنا"/>-->
+
+<!--        <item-->
+<!--            android:icon="@drawable/log_out"-->
+<!--            android:id="@+id/sign_out"-->
+<!--            android:title="تسجيل الخروج"/>-->
+<!--    </group>-->
+
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

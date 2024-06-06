@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layoutDirection="ltr"
+    android:background="@drawable/dialog_back"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sorry" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="نعتذر سيتم إصلاح السيرفرات في أقرب وقت  !"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:textColor="?attr/defaultBtnTxtColor"
+            android:id="@+id/ok_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/watch_back"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="حسنا" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout
+        android:background="?attr/AppBackgroundColor"
+        android:padding="32dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".activities.RedirectActivity">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/whats_new"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="يتوفر تحديث اضغط هنا لتحميله"
+            android:textColor="?attr/infoTextColor_1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:textColor="?attr/defaultBtnTxtColor"
+            android:layout_marginTop="32dp"
+            android:onClick="openNewApp"
+            android:id="@+id/watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_container"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/watch_back"
+            android:gravity="center"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:text="المتابعة" />
+
+
+
+    </LinearLayout>
+
+</layout>

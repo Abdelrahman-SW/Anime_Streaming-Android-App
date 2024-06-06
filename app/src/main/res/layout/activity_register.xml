@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/AppBackgroundColor"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+
+<LinearLayout
+    android:layout_gravity="center"
+    android:background="?attr/AppBackgroundColor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_photo"
+        android:layout_marginTop="16dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/add_photo" />
+
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:textColorHint="?attr/hint_color"
+            android:textColor="?attr/infoTextColor_1"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:id="@+id/Username"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_supervised_user_circle_24"
+            android:background="@drawable/edit_shap"
+            android:hint="اسم المستخدم" />
+
+        <EditText
+            android:textColorHint="?attr/hint_color"
+            android:textColor="?attr/infoTextColor_1"
+            android:imeOptions="actionNext"
+            android:id="@+id/Password"
+            android:paddingRight="16dp"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="18dp"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:background="@drawable/edit_shap"
+            android:hint="كلمة المرور" />
+
+        <EditText
+            android:textColorHint="?attr/hint_color"
+            android:textColor="?attr/infoTextColor_1"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:drawablePadding="4dp"
+            android:id="@+id/email"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:background="@drawable/edit_shap"
+            android:hint="البريد الألكتروني" />
+
+        <TextView
+            android:id="@+id/privacyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="من خلال المتابعه فانك توافق على شروط الاستخدام وسياسة الخصوصية الخاصه بنا"
+            android:textAlignment="center"
+            android:textColor="?attr/register_msg_color"
+            android:textSize="15sp" />
+
+        <Button
+            android:textColor="?attr/infoTextColor_1"
+            android:id="@+id/CreateAccount"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btnedit"
+            android:text="إنشاء الحساب"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Login"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="?attr/register_msg_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="لديك حساب بالفعل تسجيل الدخول الان" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

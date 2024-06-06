@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activities.ExoplayerActivity"
+            android:background="#000">
+
+
+            <!-- activity_player.xml-->
+            <com.google.android.exoplayer2.ui.StyledPlayerView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:controller_layout_id="@layout/custom_controller"
+                app:use_controller="true"
+                app:resize_mode="fill"/>
+
+            <!--Header-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/ivDownload"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:srcCompat="@drawable/ic_file_download_white"
+                    android:layout_marginEnd="20dp"
+                    android:onClick="download"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <!--Progress Bar-->
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/no_signal_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/no_signal"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:paddingTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/hide_ad"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="0dp"
+                android:visibility="gone"
+                android:background="@drawable/icons_background"
+                app:srcCompat="@drawable/ic_baseline_close_24"
+                tools:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/banner_template"
+                android:layout_width="320dp"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+            <FrameLayout
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="140dp"
+                android:baselineAligned="false"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="32dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:padding="6dp"
+            android:id="@+id/lock_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/icons_background"
+            android:visibility="gone"
+            android:onClick="lockScreen"
+            app:srcCompat="@drawable/ic_baseline_lock_open_24"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:padding="6dp"
+            android:background="@drawable/icons_background"
+            android:id="@+id/iv_full_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/lock_screen"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="fullScreen"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_baseline_screen_rotation_24"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:padding="6dp"
+            android:background="@drawable/icons_background"
+            android:id="@+id/resize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/iv_full_screen"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="resize"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_baseline_settings_overscan_24"
+            tools:visibility="visible" />
+
+<!--        <ImageView-->
+<!--            android:padding="6dp"-->
+<!--            android:background="@drawable/icons_background"-->
+<!--            android:id="@+id/sound"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:foreground="?android:attr/selectableItemBackground"-->
+<!--            android:onClick="changeSound"-->
+<!--            android:visibility="gone"-->
+<!--            app:srcCompat="@drawable/ic_baseline_volume_up_24"-->
+<!--            tools:visibility="visible" />-->
+
+<!--        <ImageView-->
+<!--            android:padding="6dp"-->
+<!--            android:background="@drawable/icons_background"-->
+<!--            android:id="@+id/MuteSound"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_toLeftOf="@id/sound"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:foreground="?android:attr/selectableItemBackground"-->
+<!--            android:onClick="muteSound"-->
+<!--            android:visibility="gone"-->
+<!--            app:srcCompat="@drawable/ic_baseline_volume_off_24"-->
+<!--            tools:visibility="visible" />-->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

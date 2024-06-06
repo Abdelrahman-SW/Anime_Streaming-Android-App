@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <Preference
+        android:icon="@drawable/ic_color_wheel"
+        android:key="@string/ApperanceKey"
+        android:summary="@string/apperance_summary"
+        android:title="@string/apperance_settings" />
+
+
+    <ListPreference
+        android:icon="@drawable/ic_baseline_grid_on_24"
+        android:defaultValue="@string/grid"
+        android:entries="@array/ViewEntries"
+        android:entryValues="@array/ViewValues"
+        android:key="@string/view_key"
+        android:summary="@string/view_sum"
+        android:title="@string/view_title" />
+
+
+    <Preference
+        android:icon="@drawable/ic_baseline_mail_24"
+        android:key="@string/feedback"
+        android:summary="@string/mail_summary"
+        android:title="@string/mail_settings" />
+
+
+    <Preference
+        android:icon="@drawable/ic_baseline_report_problem_24"
+        android:key="@string/malfunctions_key"
+        android:summary="@string/damage_summary"
+        android:title="@string/damage" />
+
+
+    <Preference
+        android:icon="@drawable/ic_star__1_"
+        android:key="@string/rate_key"
+        android:title="@string/rate_settings" />
+
+    <Preference
+        android:icon="@drawable/ic_share__2_"
+        android:key="@string/share_key"
+        android:title="@string/share_settings" />
+
+    <Preference
+        android:icon="@drawable/web_icon"
+        android:key="@string/MoreApps"
+        android:title="@string/website_settings" />
+
+    <Preference
+        android:icon="@drawable/social_icon"
+        android:key="@string/social_media_key"
+        android:title="@string/social_media_title" />
+
+
+    <!--        <Preference-->
+    <!--            android:title="رقم الإصدار"-->
+    <!--            android:summary="1.0"-->
+    <!--            android:selectable="false" />-->
+
+
+    <!--    <PreferenceCategory android:title="تابعنا">-->
+    <!--        <Preference android:title="فيس بوك" android:icon="@drawable/ic_facebook"-->
+    <!--            android:key="@string/facebook"-->
+    <!--            />-->
+    <!--        <Preference android:title="تويتر" android:icon="@drawable/ic_twitter"-->
+    <!--            android:key="@string/Twitter"-->
+    <!--            />-->
+    <!--        <Preference android:title="انستجرام" android:icon="@drawable/ic_instagram_sketched"-->
+    <!--            android:key="@string/Instagram"-->
+    <!--            />-->
+    <!--        <Preference android:title="يوتيوب" android:icon="@drawable/ic_youtube__1_"-->
+    <!--            android:key="@string/Youtube"-->
+    <!--            />-->
+    <!--    </PreferenceCategory>-->
+</PreferenceScreen>

@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">الانمي للجميع</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="cartoon_fragment">CartoonFragment</string>
+
+    <!--Firebase nodes-->
+    <string name="node_cartoons">cartoons</string>
+    <string name="node_playlists">playlists</string>
+    <string name="node_episodes">episodes</string>
+    <string name="node_reports">reports</string>
+    <string name="node_admob">admob</string>
+    <string name="action">أكشن</string>
+    <string name="adventure">مغامرات</string>
+    <string name="girls_anime">كرتون بنات</string>
+
+    <string name="movies_fragment">MoviesFragment</string>
+    <string name="latest_cartoons_fragment">LatestCartoonsFragment</string>
+    <string name="latest_episodes_fragment">LatestEpisodesFragment</string>
+    <string name="episode_dates_fragment">EpisodeDatesFragment</string>
+
+    <!--Admob-->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_ad_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+
+    <!--Errors-->
+    <string name="err_general">حدثت مشكلة ما برجاء المحاولة في وقت لاحق</string>
+
+    <!--Shared Pref-->
+    <string name="shared_pref">mysharedPref</string>
+    <string name="error_permission_denied">تم رفض الصلاحية</string>
+    <string name="format_mp4">%s.mp4</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <!--Facebook-->
+    <string name="facebook_app_id">584065936603461</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">7339fd4fe06573e743b2e77da0674fb8</string>
+
+    <!--google Sign IN -->
+    <string name="ClientID">985022686551-u6h7dg805essosfp8l2m0j56aunikqhv.apps.googleusercontent.com</string>
+    <string name="notification_channel_id">animeUpdates</string>
+
+
+    <string name="apperance_settings">مظهر التطبيق</string>
+    <string name="apperance_summary">اختر المظهر المفضل لك</string>
+    <string name="rate_settings">تقييم التطبيق</string>
+    <string name="share_settings">مشاركة التطبيق</string>
+    <string name="mail_settings">تواصل معنا</string>
+    <string name="mail_summary">إرسال أرائك حول التطبيق</string>
+    <string name="website_settings">الذهاب إلي موقعنا</string>
+    <string name="ApperanceKey" translatable="false">Apperance_Key</string>
+    <string name="feedback" translatable="false">feedback_key</string>
+    <string name="MoreApps" translatable="false">more_apps_key</string>
+    <string name="rate_key" translatable="false">rateKey</string>
+    <string name="damage">الإبلاغ عن عطل</string>
+    <string name="damage_summary">هل تواجه عطل ؟ قم بالإبلاغ الآن</string>
+    <string name="share_key">share_key</string>
+    <string name="social_media_key">social_media</string>
+    <string name="social_media_title">تابعنا على مواقع التواصل</string>
+    <string name="malfunctions_key">malfunctions</string>
+    <string name="THEME_KEY" translatable="false">myTheme</string>
+    <string name="CURRENT_COLOR_KEY" translatable="false">currentColor</string>
+    <string name="telegram_url">https://t.me/m_c_w_a</string>
+    <string name="facebook_url">https://www.facebook.com/appsanime</string>
+    <string name="youtube_url">https://www.youtube.com/@anime_media</string>
+    <string name="twitter_url">https://twitter.com/anime__media</string>
+    <string name="instagram_url">https://www.instagram.com/anime_cartoon_full</string>
+    <string name="tiktok_url">https://www.tiktok.com/@cartoon.anime1</string>
+    <string name="website_url">https://apps-anime.com</string>
+    <string name="contact_email">support@apps-anime.com</string>
+    <string name="notification_topic">AppUpdatesNotifications</string>
+    <string name="download_video_app">لمشاهدة الحلقة يجب تثبيت مشغل الفيديو يمكنك تثبيته من خلال</string>
+    <string name="download_downloader_app" >لتحميل الحلقة يجب تثبيت تطبيق التحميل يمكنك تثبيته من خلال</string>
+    <string name="view_title">طريقة العرض</string>
+    <string name="view_sum">أختر طريقة عرض الإنمي المفضلة لك سواء قائمة أو شبكة</string>
+    <string name="view_key">viewKey</string>
+    <string name="grid">grid</string>
+    <string name="list">list</string>
+    <string name="RemoveAdKey">remove_ad</string>
+    <string name="thanks_msg">شكرا لك</string>
+    <string name="InterstitialBeforeKey" translatable="false">InterstitialBefore</string>
+    <string name="bannerKey" translatable="false">banner</string>
+    <string name="InterstitialAfterKey" translatable="false">InterstitialAfterKey</string>
+    <string name="ima_id_key">ima_id_ad</string>
+    <string name="changeSound">الصوت</string>
+    <string name="soundKey">sound_key</string>
+    <string name="notification_perm_denied">تم رفض الصلاحيه لن نتمكن من إبلاغك ب أخر التحدثيات</string>
+
+
+
+</resources>

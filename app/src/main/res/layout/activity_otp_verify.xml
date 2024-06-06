@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/AppBackgroundColor"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.FeedbacksActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/AppBackgroundColor"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:padding="32dp"
+        tools:context=".activities.ServerIsUnderMaintenanceActivity">
+
+        <ImageView
+            android:id="@+id/imgMantaince"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/verify_img" />
+
+        <TextView
+            android:id="@+id/textMantaince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgMantaince"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:text=" يرجي إدخال الرمز المرسل إلي بريدك الإلكتروني والمكون من 4 أرقام"
+            android:textColor="?attr/infoTextColor_1"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textMantaince"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/code4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="?attr/infoTextColor_1"
+                app:backgroundTint="@color/AnimeTextColor_1" />
+
+            <EditText
+                android:id="@+id/code3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="?attr/infoTextColor_1"
+                app:backgroundTint="@color/AnimeTextColor_1" />
+
+            <EditText
+                android:id="@+id/code2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="?attr/infoTextColor_1"
+                app:backgroundTint="@color/AnimeTextColor_1" />
+
+            <EditText
+                android:id="@+id/code1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:digits="0123456789"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textColor="?attr/infoTextColor_1"
+                app:backgroundTint="@color/AnimeTextColor_1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/retry_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/code"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="24dp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:text="لم يتم إرسال الرمز ؟ إعادة الإرسال"
+            android:textColor="?attr/register_msg_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/change_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/retry_send"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:text="تغيير البريد الإلكتروني"
+            android:textColor="?attr/infoTextColor_1"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/change_email"
+            android:layout_centerInParent="true"
+            android:background="@drawable/watch_back"
+            android:gravity="center"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:text="المتابعة"
+            android:textColor="?attr/defaultBtnTxtColor"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mytransparentBackgroud"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progress"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+
+    </FrameLayout>
+
+</FrameLayout>

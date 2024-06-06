@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="server_btn_dim">30dp</dimen>
+    <dimen name="power_on_off_dim">32dp</dimen>
+    <dimen name="episode_date_title_size">17sp</dimen>
+    <dimen name="episode_title_padding">4dp</dimen>
+    <dimen name="date_recycle_margin">8dp</dimen>
+    <dimen name="date_layout_padding">8dp</dimen>
+</resources>

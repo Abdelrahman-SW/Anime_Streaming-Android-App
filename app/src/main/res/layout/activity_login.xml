@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/AppBackgroundColor"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/AppBackgroundColor"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/user_profile"
+            app:civ_border_color="?attr/infoTextColor_1"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_shap"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:hint="البريد الألكتروني"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="4dp"
+                android:textColor="?attr/infoTextColor_1"
+                android:textColorHint="?attr/hint_color" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/edit_shap"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:gravity="center"
+                android:hint="كلمة المرور"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="4dp"
+                android:textColor="?attr/infoTextColor_1"
+                android:textColorHint="?attr/hint_color" />
+
+
+            <TextView
+                android:id="@+id/privacyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="من خلال المتابعه فانك توافق على شروط الاستخدام وسياسة الخصوصية الخاصه بنا"
+                android:textAlignment="center"
+                android:textColor="?attr/register_msg_color"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/btnedit"
+                android:text="تسجيل الدخول"
+                android:textAlignment="center"
+                android:textColor="?attr/defaultBtnTxtColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="المتابعة بإستخدام "
+                android:textAlignment="center"
+                android:textColor="?attr/hint_color"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/google"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="26dp"
+                    android:background="@drawable/google"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/facebook"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/facebook"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="ليس لديك حساب قم بإنشاء واحد الأن"
+                android:textAlignment="center"
+                android:textColor="?attr/register_msg_color"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/forgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="نسيت كلمة المرور"
+                android:textAlignment="center"
+                android:textColor="?attr/register_msg_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

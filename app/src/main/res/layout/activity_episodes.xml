@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout
+        android:background="?attr/AppBackgroundColor"
+        android:fitsSystemWindows="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layoutDirection="rtl"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <include
+                android:id="@+id/included_toolbar"
+                layout="@layout/layout_toolbar"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layoutAnimation="@anim/recycle_anim"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:spanCount="3"
+                        android:id="@+id/episodess_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding= "8dp"
+                        tools:listitem="@layout/layout_recyclerepisode_item"
+                        />
+
+            <LinearLayout
+                android:id="@+id/add_container"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                />
+
+                </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/progressBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="7dp"
+            android:visibility="visible"
+            android:background="@color/mytransparentBackgroud"
+            >
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/progress"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent" />
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</layout>

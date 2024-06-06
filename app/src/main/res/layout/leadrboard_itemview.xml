@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/medal_textView"
+            android:layout_width="62dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="#100"
+            android:textAlignment="center"
+            android:textColor="?attr/title_color"
+            android:textSize="20sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/medal_imgView"
+            android:layout_width="62dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:src="@drawable/gold_medal"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_imgView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/user_profile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/usernameTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="?attr/infoTextColor_1"
+                android:textDirection="rtl"
+                android:textSize="14sp"
+                tools:text="عبدالرحمن خالد" />
+
+            <TextView
+                android:id="@+id/watchedEpisodesTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="?attr/infoTextColor_2"
+                android:textDirection="rtl"
+                android:textSize="13sp"
+                tools:text="عدد الحلقات التي تم مشاهدتها : 230" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
