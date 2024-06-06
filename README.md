@@ -12,6 +12,8 @@ The App Have Many Featuers icluded : watch animes , add to favourite , add comme
 
 -- Retrofit : To Sync With Our Server :  Get Anime episodes  , add comments and replies and more ..
 
+-- ExoPlayer : To Play Anime Videos
+
 -- Firebase Push Notification http V1 : To push notification when new episodes added to The Server
 
 -- Other Tools : Room Database , Work Manager , Notification Manager , Broadcast Receivers , viewModel , LiveData .. 
